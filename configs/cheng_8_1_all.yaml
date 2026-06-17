@@ -1,0 +1,25 @@
+r: 8
+alpha: 1
+
+divide_rank: False
+
+
+
+adapt_residual: True
+conv1_residual: True
+conv2_residual: True
+
+adapt_residual_stride: True
+conv1_residual_stride: True # downsample
+conv2_residual_stride: True
+
+adapt_residual_upsample: True
+subpel_conv_residual_upsample: True # upsample
+conv_residual_upsample: True
+
+adapt_attention: True
+conv_a: True
+conv_b: True
+
+
+activation: "none"

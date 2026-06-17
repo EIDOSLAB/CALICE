@@ -2,6 +2,9 @@
 wandb
 .DS_Store
 
+check_repo/
+checkpoints/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

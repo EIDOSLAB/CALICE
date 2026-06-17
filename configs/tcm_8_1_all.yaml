@@ -1,0 +1,23 @@
+r: 8
+alpha: 1
+
+divide_rank: False
+
+
+
+adapt_conv_trans: True
+adapt_mlp_fc1_conv_trans: True
+adapt_mlp_fc2_conv_trans: True
+adapt_conv1_1_conv_trans: True
+adapt_conv1_2_conv_trans: True
+adapt_conv1_resblock_conv_trans: True
+adapt_conv2_resblock_conv_trans: True
+adapt_residual_stride: True
+adapt_conv1_residual_stride: True
+adapt_conv2_residual_stride: True
+adapt_residual_upsample: True
+adapt_subpel_conv_residual_upsample: True
+adapt_conv_residual_upsample: True
+
+
+activation: "none"

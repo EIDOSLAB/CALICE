@@ -1,11 +1,28 @@
-FROM eidos-service.di.unito.it/eidos-base-pytorch:1.10.0
+FROM pytorch/pytorch:2.7.0-cuda11.8-cudnn9-runtime
 
-# Copy source files and make it owned by the group eidoslab
-# and give write permission to the group
+RUN apt update -y
+RUN apt install -y gcc
+RUN apt install -y g++ 
+
+RUN pip install numpy
+RUN pip install timm
+RUN pip install wandb
+RUN pip install scikit-image
+RUN pip install tqdm
+RUN pip install gdown tensorboard
+RUN pip install torchprofile
+RUN pip install torch_geometric
+RUN pip install einops
+RUN pip install compressai==1.2.4
+RUN pip install torch-pruning
+RUN pip install seaborn
+
+
+
 COPY src /src
 RUN chmod 775 /src
 RUN chown -R :1337 /src
 
 WORKDIR /src
 
-ENTRYPOINT ["python3"]
+ENTRYPOINT ["python"]
